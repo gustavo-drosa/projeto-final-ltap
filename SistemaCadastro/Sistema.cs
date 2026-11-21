@@ -83,6 +83,22 @@ namespace SistemaCadastro
 
         private void BtnConfirmaCadastro_Click(object sender, EventArgs e)
         {
+            ConectaBanco con = new ConectaBanco();
+            Banda novaBanda = new Banda();
+
+            novaBanda.Nome = txtnome.Text;
+            //novaBanda.Genero = Convert.ToInt32(cbGenero.Text);
+            novaBanda.Genero = 1;
+            novaBanda.Integrantes = Convert.ToInt32(txtintegrantes.Text);
+            novaBanda.Ranking = Convert.ToInt32(txtranking.Text);
+
+            bool retorno = con.insereBanda(novaBanda);
+
+            if (!retorno)
+            {
+                MessageBox.Show(con.mensagem);
+            }
+
 
         }
     }
