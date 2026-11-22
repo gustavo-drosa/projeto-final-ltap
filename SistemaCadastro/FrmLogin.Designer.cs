@@ -68,6 +68,7 @@
             this.txtSenhaLogin.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtSenhaLogin.Location = new System.Drawing.Point(259, 261);
             this.txtSenhaLogin.Name = "txtSenhaLogin";
+            this.txtSenhaLogin.PasswordChar = '*';
             this.txtSenhaLogin.Size = new System.Drawing.Size(231, 29);
             this.txtSenhaLogin.TabIndex = 11;
             this.txtSenhaLogin.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
