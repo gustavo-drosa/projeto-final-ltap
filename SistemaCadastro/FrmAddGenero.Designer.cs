@@ -114,9 +114,9 @@
             // 
             // btnFechar
             // 
-            this.btnFechar.Location = new System.Drawing.Point(622, 37);
+            this.btnFechar.Location = new System.Drawing.Point(617, 37);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(37, 23);
+            this.btnFechar.Size = new System.Drawing.Size(42, 32);
             this.btnFechar.TabIndex = 17;
             this.btnFechar.Text = "X";
             this.btnFechar.UseVisualStyleBackColor = true;

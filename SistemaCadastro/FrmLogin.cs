@@ -48,5 +48,10 @@ namespace SistemaCadastro
                 MessageBox.Show("Usuário ou senha incorretos" + conecta.mensagem);
             }
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

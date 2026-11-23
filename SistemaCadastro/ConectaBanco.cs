@@ -1,17 +1,34 @@
-﻿using System;
+﻿using DotNetEnv;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 
 namespace SistemaCadastro
 {
     internal class ConectaBanco
     {
-        MySqlConnection conexao = new MySqlConnection("server=localhost; user id=root; password=1234;database=banco_siscadastro");
+        public MySqlConnection conexao;
+
+        public ConectaBanco()
+        {
+            
+            Env.Load();
+
+            string servidor = $"server={Environment.GetEnvironmentVariable("DB_SERVER")};" +
+                              $"port={Environment.GetEnvironmentVariable("DB_PORT")};" +
+                              $"uid={Environment.GetEnvironmentVariable("DB_USER")};" +
+                              $"pwd={Environment.GetEnvironmentVariable("DB_PASS")};" +
+                              $"database={Environment.GetEnvironmentVariable("DB_NAME")};";
+
+            conexao = new MySqlConnection(servidor);
+        }
+
         public string mensagem;
 
         public bool insereBanda(Banda novaBanda)

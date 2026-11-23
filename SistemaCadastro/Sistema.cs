@@ -51,6 +51,7 @@ namespace SistemaCadastro
         {
             listaCBGeneros();
             cbGenero.Text = "";
+            cbAlteraGenero.Text = "";
             lista_gridBandas();
         }
 
@@ -156,6 +157,7 @@ namespace SistemaCadastro
         {
             txtnome.Clear();
             cbGenero.Text = "";
+            cbAlteraGenero.Text = "";
             txtintegrantes.Clear();
             txtranking.Clear();
             txtnome.Focus();
