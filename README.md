@@ -20,6 +20,17 @@ O projeto utiliza as seguintes bibliotecas NuGet:
 
 - MySql.Data 8.1.0
 
+## Telas da aplicação
+### LOGIN
+![Tela de login](assets/TelaLogin.png)
+### CADASTRO DE BANDAS
+![Tela de cadastro de bandas](assets/TelaCadastro.png)
+### CONSULTA E BUSCA
+![Tela de consulta e busca](assets/TelaBuscar.png)
+### ATUALIZAR BANDA
+![Tela de atualização de banda](assets/TelaAlterar.png)
+### ADICIONAR NOVO GÊNERO
+![Tela de adicionar novo gênero](assets/TelaAdicionarGenero.png)
 
 ## 🗄️ Estrutura do Banco de Dados
 
@@ -52,38 +63,6 @@ Gêneros pré-cadastrados: Rock, Metal, Pagode, Gospel, Funk
 - MySQL Server 8.0 ou superior
 - .NET Framework 4.7.2 ou superior
 
-### Passo a Passo
-
-1. **Clone o repositório**
-   ```bash
-   git clone <url-do-repositorio>
-   cd "Semana 12 - Projeto CSharp - Modelo"
-   ```
-
-2. **Configure o Banco de Dados**
-   - Abra o MySQL Workbench ou outro cliente MySQL
-   - Execute o script `DumpBancoCadastro.sql` para criar as tabelas e procedures
-   ```sql
-   source DumpBancoCadastro.sql
-   ```
-
-3. **Configure a String de Conexão**
-   - Abra o arquivo `App.config` no projeto SistemaCadastro
-   - Atualize a string de conexão com suas credenciais do MySQL
-   ```xml
-   <connectionStrings>
-     <add name="MySqlConnection" 
-          connectionString="Server=localhost;Database=cadastro;Uid=root;Pwd=sua_senha;" 
-          providerName="MySql.Data.MySqlClient"/>
-   </connectionStrings>
-   ```
-
-4. **Restaure os Pacotes NuGet**
-   - No Visual Studio, clique com o botão direito na solução
-   - Selecione "Restore NuGet Packages"
-
-5. **Compile e Execute**
-   - Pressione `F5` ou clique em "Start" no Visual Studio
 
 ## 🎯 Funcionalidades
 
@@ -93,21 +72,6 @@ Gêneros pré-cadastrados: Rock, Metal, Pagode, Gospel, Funk
 - 🗑️ **Remoção de Bandas** - Exclua registros do sistema
 - 🎵 **Gerenciamento de Gêneros** - Adicione novos gêneros musicais
 - 📊 **Visualização em Lista** - Veja todas as bandas cadastradas
-
-## 📁 Estrutura do Projeto
-
-```
-SistemaCadastro/
-├── Program.cs              # Ponto de entrada da aplicação
-├── Sistema.cs              # Lógica principal do formulário
-├── Sistema.Designer.cs     # Designer do Windows Forms
-├── App.config             # Configurações da aplicação
-├── packages.config        # Configuração de pacotes NuGet
-└── Properties/            # Propriedades do projeto
-    ├── AssemblyInfo.cs
-    ├── Resources.resx
-    └── Settings.settings
-```
 
 ## 🎨 Interface
 
@@ -125,7 +89,7 @@ Este projeto é um trabalho acadêmico desenvolvido para fins educacionais.
 
 ## 👥 Autor
 
-Desenvolvido como projeto do curso de Linguagem I
+Desenvolvido como projeto da disciplina de Linguagens e Técnicas Avançadas de Programação
 
 ---
 
