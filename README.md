@@ -19,6 +19,7 @@ Este projeto é um sistema de cadastro que permite gerenciar informações sobre
 O projeto utiliza as seguintes bibliotecas NuGet:
 
 - MySql.Data 8.1.0
+- DotNetEnv 3.2.0
 
 ## Telas da aplicação
 ### LOGIN
@@ -49,11 +50,19 @@ Gêneros pré-cadastrados: Rock, Metal, Pagode, Gospel, Funk
 - `ranking` (INT)
 - `fk_genero` (INT, FOREIGN KEY)
 
-### Stored Procedures
+### Tabela `usuarios`
+- `idusuarios` (INT, AUTO_INCREMENT, PRIMARY KEY)
+- `nome` (VARCHAR(100))
+- `senha` (VARCHAR(100))
 
+### Stored Procedures
+- `consultaLogin` - Consulta usuários
 - `sp_insereBanda` - Insere uma nova banda no banco
 - `sp_listaBandas` - Lista todas as bandas com seus gêneros
 - `sp_listaGeneros` - Lista todos os gêneros disponíveis
+- `sp_alteraBanda` - Atualiza dados de uma banda
+- `sp_insereGenero` - Insere novo gênero de banda
+- `sp_removeBanda` - Remove o registro de uma banda
 
 ## ⚙️ Instalação e Configuração
 
@@ -79,6 +88,8 @@ O sistema possui uma interface com navegação por abas:
 
 - **Aba Cadastro** - Formulário para inserir novas bandas
 - **Aba Busca** - Interface para pesquisar e visualizar bandas cadastradas
+- **Aba Alterar** - Interface para atualizar registros de bandas cadastradas
+- **Aba Cadastro de Gênero** - Interface para adicionar novos gêneros
 
 A navegação é facilitada por botões laterais com indicador visual de aba selecionada.
 
