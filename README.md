@@ -73,6 +73,35 @@ Gêneros pré-cadastrados: Rock, Metal, Pagode, Gospel, Funk
 - .NET Framework 4.7.2 ou superior
 
 
+## Passo a passo
+
+### 1. Clone o repositório
+
+```bash
+git clone <url-do-repositorio>
+```
+
+### 2. Configure o banco de dados
+
+Copie o arquivo `.env.example`, renomeie-o para `.env` e preencha as variáveis com os dados de conexão do banco de dados.
+
+### 3. Restaure os pacotes NuGet
+
+No Visual Studio:
+
+1. Clique com o botão direito sobre a solução.
+2. Selecione **Restore NuGet Packages**.
+3. Aguarde a conclusão da restauração dos pacotes.
+
+### 4. Compile e execute o projeto
+
+No Visual Studio:
+
+1. Pressione `F5`; ou
+2. Clique em **Start** para compilar e executar a aplicação.
+
+
+
 ## 🎯 Funcionalidades
 
 - ✅ **Cadastro de Bandas** - Adicione novas bandas com informações completas
